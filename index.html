@@ -1,68 +1,752 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Human Apps NZ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.css" media="screen">
-    <link rel="stylesheet" href="bootswatch.min.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <script src="bsa.js"></script>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="SeventyThree - Premium Portfolio Template">
+		<meta name="author" content="http://choco-pixel.com">
+		<title>Human Apps</title>
+		
+		<!-- Stylesheets -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/bootstrapValidator.min.css" rel="stylesheet">
+		<link href="assets/css/ladda-themeless.min.css" rel="stylesheet">
+		<link href="assets/css/jasny-bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+		<link href="assets/css/audioplayer.css" rel="stylesheet">
+		<link href="assets/css/venobox.css" rel="stylesheet">
+		<link href="assets/css/app.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+		
+		<!-- Respond.js IE8 support of media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+		<script src="assets/js/pace.min.js"></script>
+		<script src="assets/js/modernizr.min.js"></script>
+	</head>
+	<body>
+	
+		<!-- Menu -->
+		<div class="navmenu navmenu-fixed-right offcanvas">
+			<a href="#" class="navmenu-brand">
+			<img class="navmenu-brand" src="assets/img/logo/logo.png" alt="Logo">
+			<span class="btn-close" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">&times;</span>
+			</a>
+			<ul class="nav navmenu-nav">
+				<li class="open">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="index.html">Default</a></li>
+						<li><a href="#" class="active">Carousel</a></li>
+						<li><a href="index-video.html">Video</a></li>
+						<li><a href="index-personal.html">Personal</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="blog-single.html">Single</a></li>
+						<li><a href="blog.html">Default</a></li>
+						<li><a href="blog-masonry.html">Masonry</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+					<ul class="dropdown-menu navmenu-nav">
+						<li><a href="portfolio.html">Default</a></li>
+						<li><a href="portfolio-single.html">Single</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		</div>
+		<header class="navbar intro-header">
+			<div class="col-md-6">
+				<img class="navmenu-brand" src="assets/img/logo/logo.png" alt="Logo">
+			</div>
+			<div class="col-md-6">
+				<a href="#" class="pull-right navbar-btn" id="menuToggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+				<i class="fa fa-reorder"></i>
+				</a>
+			</div>
+		</header>
+		
+		<!-- Carousel -->
+		
+		<section id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
 
-    
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="assets/img/background/harbour.jpg" alt="" class="bg-item" />
+					<div class="item-inner">
+						<div class="item-inner-container">
+							<div class="container">
+								<div class="col-sm-12">
+									<div class="carousel-caption">
+										<div class="text-center">
+											<h1>Get ahead of the pack</h1>
+											<p>Human Apps specializes in exploratory product development in exciting new areas of technology</p>
+											<a href="#" class="btn btn-theme" style="margin-right: 10px;margin-top: 10px;">Get in touch</a>
+											<a href="#about" class="btn btn-theme" style="margin-top: 10px;">About Us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="assets/img/background/statue_bro.jpg" alt="" class="bg-item" />
+					<div class="item-inner">
+						<div class="item-inner-container">
+							<div class="container">
+								<div class="col-sm-12">
+									<div class="carousel-container">
+										<div class="carousel-col-6">
+											<div class="carousel-caption">
+												<h1>Absolute Innovation</h1>
+												<p>We work with clients on the absolute cutting edge of technology.</p>
+												<a href="#" class="btn btn-theme">Get in touch</a>
+											</div>
+										</div>
+										<div class="carousel-col-6">
+											<img src="assets/img/about/ipad-iphone.png" alt="" class="img-responsive">
+										</div>
+									</div>
+								</div>
 
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<img src="assets/img/background/trees.jpg" alt="" class="bg-item" />
+					<div class="item-inner">
+						<div class="item-inner-container">
+							<div class="container">
+								<div class="carousel-container">
+									<div class="carousel-col-6">
+										<div class="carousel-caption">
+											<h1>Building Virtual Worlds</h1>
+											<p>We are focused on building the future of human-computer interaction.</p>
+											<a href="#" class="btn btn-theme">Portfolio</a>
+										</div>
+									</div>
+									<div class="carousel-col-6">
+										<img src="assets/img/about/oculus.png" alt="" class="img-responsive">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div class="container">
-      <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Human Apps Ltd.</h1>
-            <p class="lead">Wellington, New Zealand.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="bs-component">
-            <div class="jumbotron">
-              <h1>Software Development Technology</h1>
-              <p>Everything under the sun. Amazing levels of awesome. Unbelievable application of skills. Wow.</p>
-              <p><a class="btn btn-primary btn-lg" href="mailto:david@humanapps.io">Email</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <footer>
-      <div class="row">
-        <div class="col-lg-6">
-          <p><a href="http://www.davidpetrie.com">About</a></p>
-          <p>&copy; 2014 Human Apps Limited New Zealand</p>
-
-        </div> 
-        <div class="col-lg-6">
-          <small>
-          <p>Theme by <a href="http://thomaspark.me" rel="nofollow">Thomas Park</a>.</p>
-          <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
-          </small>
-        </div>
-      </div>
-
-    </footer>
-
-
-    </div>
-
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-  </body>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<span class="fa fa-angle-right"></span>
+			</a>
+		</section>
+		
+		<!-- About -->
+		<section id="about" class="section section-solid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">About</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="lead">
+							<strong>Curabitur molestie</strong> libero ut enim egestas 
+							placerat. Sed facilisis magna sapien, id tincidunt metus 
+							adipiscing sed. Aliquam viverra sagittis quam vel sagittis. 
+						</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Mauris interdum condimentum vestibulum. Proin ullamcorper 
+							lorem adipiscing elit ornare, et lobortis tortor fringilla. 
+							Curabitur non volutpat justo, at posuere dolor.
+							Fusce eu tellus vel tellus porttitor aliquet. Etiam ullamcorper 
+							laoreet lectus ut suscipit. Quisque luctus felis sed ante elementum condimentum. 
+							Praesent sagittis odio eu ante sollicitudin, vel commodo 
+							odio viverra. 
+						</p>
+					</div>
+				</div>
+				<div class="row mt20">
+					<div class="col-sm-4 feature-box-container">
+						<div class="feature-box">
+							<div class="icon">
+								<i class="fa fa-rocket"></i>
+							</div>
+							<div class="description">
+								<h4>Donec rutrum vitae</h4>
+								<p>Quisque luctus felis sed ante elementum condimentum. 
+									Praesent sagittis odio eu ante sollicitudin
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 feature-box-container">
+						<div class="feature-box">
+							<div class="icon">
+								<i class="fa fa-heart"></i>
+							</div>
+							<div class="description">
+								<h4>Nunc consectetur</h4>
+								<p>Sed ipsum nulla, eleifend ac consectetur ut, vehicula sed lacus. 
+									Quisque lectus sem, vestibulum vel nibh.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 feature-box-container">
+						<div class="feature-box">
+							<div class="icon">
+								<i class="fa fa-life-ring"></i>
+							</div>
+							<div class="description">
+								<h4>Quisque ullamcorper</h4>
+								<p>Nam pharetra, nunc eget faucibus 
+									vulputate, libero eros commodo 
+									nibh, non laoreet arcu est non dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt20">
+					<div class="col-sm-7">
+						<h4>Both Local and International Clients</h4>
+						<p>We are based in Wellington, New Zealand, the startup hub of New Zealand.We have a group of loyal clients in New Zealand, but also serve a growing numbers of clients in all parts of the world, from Sydney to San Francisco.
+						</p>
+						<p>Our clients have given us the opportunity to work on some fantastic projects, exposing to exciting new technology.</p>
+					</div>
+					<div class="col-sm-5">
+						<div class="about-carousel">
+							<div class="about-slide">
+								<a href="assets/img/about/thumbs/1.jpg" class="overlay venobox" data-gall="aboutGallery" title="Pellentesque lacinia pretium mi">
+								<span class="btn btn-sm btn-theme">
+								<i class="fa fa-search"></i> 
+								</span>
+								</a>
+								<img src="assets/img/about/thumbs/1.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="about-slide">
+								<a href="assets/img/about/thumbs/2.jpg" class="overlay venobox" data-gall="aboutGallery" title="Sed ullamcorper enim quis">
+								<span class="btn btn-sm btn-theme">
+								<i class="fa fa-search"></i>
+								</span>
+								</a>
+								<img src="assets/img/about/thumbs/2.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="about-slide">
+								<a href="assets/img/about/thumbs/3.jpg" class="overlay venobox" data-gall="aboutGallery" title="Maecenas volutpat massa eu urna">
+								<span class="btn btn-sm btn-theme">
+								<i class="fa fa-search"></i>
+								</span>
+								</a>
+								<img src="assets/img/about/thumbs/3.jpg" alt="" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Services -->
+		<section class="section section-solid-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Services</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="assets/img/about/services.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-6">
+						<div class="feature-box-container">
+							<div class="feature-box">
+								<div class="icon">
+									<i class="fa fa-cogs"></i>
+								</div>
+								<div class="description">
+									<h4>Product Design</h4>
+									<p>Fusce eu tellus vel tellus porttitor aliquet. 
+										Etiam ullamcorper laoreet lectus ut suscipit.
+										Felis sed ante.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature-box-container">
+							<div class="feature-box">
+								<div class="icon">
+									<i class="fa fa-rocket"></i>
+								</div>
+								<div class="description">
+									<h4>Exotic and Experimental</h4>
+									<p>Quisque luctus felis sed ante elementum condimentum. 
+										Praesent sagittis odio eu ante sollicitudin
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature-box-container">
+							<div class="feature-box">
+								<div class="icon">
+									<i class="fa fa-heart"></i>
+								</div>
+								<div class="description">
+									<h4>Mobile Application Development</h4>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="feature-box-container">
+							<div class="feature-box">
+								<div class="icon">
+									<i class="fa fa-life-ring"></i>
+								</div>
+								<div class="description">
+									<h4>Backend Infrastructure</h4>
+									<p>Nam pharetra, nunc eget faucibus 
+										vulputate, libero eros commodo 
+										nibh, non laoreet arcu est non dolor.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="feature-box-container">
+							<div class="feature-box">
+								<div class="icon">
+									<i class="fa fa-gift"></i>
+								</div>
+								<div class="description">
+									<h4>Graphics and 3D</h4>
+									<p>Vestibulum nec eros vestibulum, 
+										vehicula metus eu, mattis libero.
+										Ut ac libero elementum, rutrum diam bibendum, 
+										consectetur metus. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Section -->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Duis ac pretium nisl?</h3>
+						<p>Integer ac lorem est. Donec placerat sem eu ullamcorper dapibus.</p>
+						<a href="#" class="btn btn-theme">Duis nec</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Team -->
+		<section id="team" class="section section-solid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Our team</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="bxslider" id="team-carousel">
+					<div class="team-member">
+						<div class="team-member-img">
+							<img src="assets/img/portraits/dp.png" alt="" class="img-responsive">
+						</div>
+						<div class="team-member-meta">
+							<h4>David Petrie</h4>
+							<span class="team-member-profession">Founder</span>
+							<p>Software for the Internet-of-Things, Game Development, OpenGL, and iOS and Android app development.</p>
+							<div class="social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#‎"><i class="fa fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-img">
+							<img src="assets/img/portraits/mp.jpeg" alt="" class="img-responsive">
+						</div>
+						<div class="team-member-meta">
+							<h4>Michael Petrie</h4>
+							<span class="text-muted team-member-profession">Founder</span>
+							<p>Mobile app development, sound synthesis software, product design, and 2D graphics.</p>
+							<div class="social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#‎"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Portfolio -->
+		<section id="portfolio" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Portfolio</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<ul id="filter" class="list-inline filter-tags">
+							<li><a href="#" class="btn btn-sm btn-theme-inverse active" data-group="all">All</a></li>
+							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="web">Web</a></li>
+							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="app">App</a></li>
+							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="graphics">Graphics</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="portfolio-container" class="text-center">
+				<div class="portfolio-item" data-groups='["all", "branding"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/1.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Mollis magna</a>
+							<span class="category">branding</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "web"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/2.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Suspendisse potenti</a>
+							<span class="category">web</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "app"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/3.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Sed hendrerit</a>
+							<span class="category">app</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "branding"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/4.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Etiam commodo lacus</a>
+							<span class="category">branding</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "web"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/5.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">ac tristique</a>
+							<span class="category">web</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "app"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/6.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">ipsum tempor quis</a>
+							<span class="category">app</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "branding"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/7.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Donec accumsan</a>
+							<span class="category">branding</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "web"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/8.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">arcu id porta</a>
+							<span class="category">web</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "app"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/9.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">Curabitur posuere</a>
+							<span class="category">app</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="portfolio-item" data-groups='["all", "branding"]'>
+					<figure>
+						<div class="portfolio-img">
+							<a href="portfolio-single.html" class="overlay">
+								<span class="btn btn-sm btn-theme">
+									<i class="fa fa-external-link"></i>
+								</span>
+							</a>
+							<img src="assets/img/portfolio/10.jpg" alt="" class="img-responsive">
+						</div>
+						<figcaption class="hidden-md hidden-lg">
+							<a href="portfolio-single.html" class="title">lacus id sapien</a>
+							<span class="category">branding</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<a href="#" class="btn btn-theme-inverse mt40">More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Clients -->
+		<section class="section section-solid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Clients</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="bxslider" id="clients-carousel">
+					<div class="client-item">
+						<img src="assets/img/clients/1.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/2.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/3.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/4.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/5.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/2.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/4.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/3.png" alt="" class="img-responsive">
+					</div>
+					<div class="client-item">
+						<img src="assets/img/clients/1.png" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Contact</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<p>
+							<strong>Get in touch</strong> and let us know how we can help you with your software and hardware projects.
+						</p>
+						<ul class="list-contacts">
+							<li><i class="fa fa-mobile-phone"></i> (+64) 021 440 886</li>
+							<li><i class="fa fa-map-marker"></i> 55 Dress Circle<br>Wellington, New Zealand, 6037</li>
+							<li><i class="fa fa-envelope-o"></i> <a href="mailto:info@humanapps.io">info@humanapps.io</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<form class="form-horizontal" action="assets/php/contactForm.php" method="post" role="form" id="contactForm">
+							<div class="form-group">
+								<div class="col-sm-6">
+									<input type="text" name="name" class="form-control" placeholder="Name">	
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="contactEmail" class="form-control" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<textarea name="message" class="form-control" rows="8" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">
+									<span class="ladda-label">Submit</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">Copyright &copy; 2014 HumanApps Ltd.</div>
+					<div class="col-sm-6 text-right">
+						<div class="social">
+							<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="btn btn-theme"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="btn btn-theme"><i class="fa fa-dribbble"></i></a>
+							<a href="#" class="btn btn-theme"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.backstretch.min.js"></script>
+		<script src="assets/js/bootstrapValidator.min.js"></script>
+		<script src="assets/js/validator/emailAddress.js"></script>
+		<script src="assets/js/ladda.min.js"></script>
+		<script src="assets/js/retina.min.js"></script>
+		<script src="assets/js/jasny-bootstrap.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/jquery.shuffle.min.js"></script>
+		<script src="assets/js/jquery.bxslider.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/audioplayer.js"></script>
+		<script src="assets/js/venobox.min.js"></script>
+		<script src="assets/js/jquery.throttledresize.js"></script>
+		<script src="assets/js/jquery.carousel.fullscreen.js"></script>
+		<script src="assets/js/app.js"></script>
+		
+		<script>
+			$(function () {
+				seventyThree.pages.indexCarousel();
+			});
+		</script>
+	</body>
 </html>
-
